@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <title>Loan Calculator App</title>
+</head>
+
+<body>
+    <h1 class="sm:text-4xl text-2xl text-center font-semibold mt-12 mb-10">
+        Loan Calculator App
+    </h1>
+
+    <div class="flex flex-col justify-center items-center sm:w-96  mx-auto">
+            <div class="my-3">
+                <input type="number" id="amount" placeholder="Loan Amount" class="bg-gray-50 text-xl py-2 px-4 border sm:w-96 border-gray-300" />
+            </div>
+            <div class="my-3">
+                <input type="number" id="interest" placeholder="Interest Rate" class="bg-gray-50 text-xl py-2 px-4 border sm:w-96 border-gray-300" />
+            </div>
+            <div class="my-3">
+                <input type="number" id="years" placeholder="Duration" class="bg-gray-50 text-xl py-2 px-4 border sm:w-96 border-gray-300" />
+            </div>
+            <div class="my-3 ">
+                <button id="calculate"  class="
+                bg-blue-500 hover:bg-blue-700 cursor-pointer text-white rounded text-xl py-2 px-12 border
+                sm:w-96 "> Calculate </button>
+            </div>
+    </div>
+
+    <div id="results" class="pt-4 flex flex-col justify-center
+        items-center sm:w-96 w-11/12 mx-auto text-center">
+        <h3 class="text-2xl font-semibold mb-4">Results</h3>
+        <div class="bg-gray-100 my-2">
+            <input id="monthly-payment" type="text" class="bg-gray-100 p-2 text-xl sm:w-96 font-semibold" disabled />
+        </div>
+        <div class="bg-gray-100 my-2">
+            <input id="total-payment" type="text" class="bg-gray-100 p-2 text-xl sm:w-96 font-semibold" disabled />
+        </div>
+        <div class="bg-gray-100 my-2">
+            <input id="total-interest" type="text" class="bg-gray-100 p-2 text-xl sm:w-96 font-semibold" disabled />
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
